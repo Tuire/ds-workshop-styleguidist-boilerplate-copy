@@ -1,3 +1,30 @@
 .teaser {
-	background-color: pink;
+	padding: 10px;
+	display: flex;
+}
+
+.teaserDate {
+	border: 1px solid #3D578D;
+	border-radius: 50%;
+	color: #3D578D;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	width: 114px;
+	height: 114px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.day {
+	font-size: 51px;
+}
+
+.monthYear {
+	font-size: 17px;
+}
+
+.teaserContent {
+
 }
