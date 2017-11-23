@@ -7,7 +7,6 @@ import styles from "./Button.css";
  * The only true button.
  */
 const Button = ({ color, size, onClick, children }) => {
-  console.log(styles);
   return (
     <button className={styles.button} onClick={onClick}>
       {children}

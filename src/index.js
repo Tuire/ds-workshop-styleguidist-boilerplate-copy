@@ -1,15 +1,5 @@
 import Button from "components/Button";
-import CounterButton from "components/CounterButton";
 import Placeholder from "components/Placeholder";
-import PushButton from "components/PushButton";
-import RandomButton from "components/RandomButton";
-import WrappedButton from "components/WrappedButton";
+import Teaser from "components/Teaser";
 
-export {
-  Button,
-  CounterButton,
-  Placeholder,
-  PushButton,
-  RandomButton,
-  WrappedButton
-};
+export { Button, Placeholder, Teaser };

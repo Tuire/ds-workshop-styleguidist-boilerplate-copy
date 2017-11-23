@@ -1,0 +1,5 @@
+Typography:
+
+```jsx
+<Teaser></Teaser>
+```

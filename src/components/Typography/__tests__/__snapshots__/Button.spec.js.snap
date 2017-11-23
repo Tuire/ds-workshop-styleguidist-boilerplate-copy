@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders <WrappedButton /> without throwing 1`] = `
+exports[`renders <Button /> without throwing 1`] = `
 <button
-  className="wrapped-button"
+  className="button"
+  onClick={[Function]}
   style={
     Object {
       "color": "#333",
@@ -10,6 +11,6 @@ exports[`renders <WrappedButton /> without throwing 1`] = `
     }
   }
 >
-   I am a WrappedButton
+   I am a Button
 </button>
 `;
