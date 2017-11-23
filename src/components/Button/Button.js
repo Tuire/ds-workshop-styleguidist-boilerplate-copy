@@ -1,0 +1,43 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+import styles from "./Button.css";
+
+/**
+ * The only true button.
+ */
+const Button = ({ color, size, onClick, children }) => {
+  console.log(styles);
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
+
+export default Button;
+
+Button.propTypes = {
+  /** Button label */
+  children: PropTypes.string.isRequired,
+  /** The color for the button */
+  color: PropTypes.string,
+  /** The size of the button */
+  size: PropTypes.oneOf(["small", "normal", "large"]),
+  /** Gets called when the user clicks on the button */
+  onClick: PropTypes.func
+};
+Button.defaultProps = {
+  color: "#333",
+  size: "normal",
+  /* eslint-disable no-console */
+  onClick: event => {
+    console.log("You have clicked me!", event.target);
+  }
+  /* eslint-enable no-console */
+};
+Button.sizes = {
+  small: "10px",
+  normal: "14px",
+  large: "18px"
+};
