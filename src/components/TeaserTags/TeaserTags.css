@@ -1,0 +1,25 @@
+
+.teaserTags {
+	list-style: none;
+	color: #3D578D;
+
+}
+
+.teaserTags ul {
+	margin:12px 0;
+	padding: 0;
+}
+
+.teaserTags li {
+	display: inline-block;
+}
+
+.teaserTags li:after {
+	content: '|';
+	padding: 0 5px;
+}
+
+
+.teaserTags li:last-of-type:after {
+	content: none;
+}

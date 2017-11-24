@@ -4,5 +4,6 @@ Typography:
 <div className="typography">
   <h1>Heading 1</h1>
   <h2>Heading 2</h2>
+  <div className="author">Author Name</div>
 </div>
 ```

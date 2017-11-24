@@ -26,5 +26,30 @@
 }
 
 .teaserContent {
+	padding-left: 20px;
+}
 
+.teaserTags {
+	list-style: none;
+	color: #3D578D;
+
+}
+
+ul {
+	margin:12px 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+li:after {
+	content: '|';
+	padding: 0 5px;
+}
+
+
+li:last-of-type:after {
+	content: none;
 }

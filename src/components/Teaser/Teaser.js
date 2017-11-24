@@ -1,14 +1,25 @@
 import React from "react";
 
 import styles from "./Teaser.css";
+import Button from "../Button/Button.js";
+import TeaserTags from "../TeaserTags/TeaserTags.js";
 import typo from "../Typography/Typography.css";
 
-const Teaser = () => {
+function createMarkup(data) {
+  return { __html: data };
+}
+
+function getDay() {
+  return parseInt(Math.random() * 30);
+}
+
+const Teaser = ({ title, author, content, tags }) => {
+  console.log(content);
   return (
     <div className={styles.teaser}>
       <div className={styles.dateContainer}>
         <div className={styles.teaserDate}>
-          <span className={styles.day}>17</span>
+          <span className={styles.day}>{getDay()}</span>
           <span className={styles.monthYear}>
             Nov
             <br />
@@ -17,27 +28,11 @@ const Teaser = () => {
         </div>
       </div>
       <div className={styles.teaserContent}>
-        <h2>Teaser heading</h2>
-        <div className={styles.author}>Author name</div>
-        <div className={styles.teaserText}>
-          <p />
-        </div>
-        <a href="#" className={styles.button}>
-          Read more
-        </a>
-      </div>
-      <div className={styles.teaserTags}>
-        <ul>
-          <li>
-            <a href="#">Teaser tag</a>
-          </li>
-          <li>
-            <a href="#">Teaser tag</a>
-          </li>
-          <li>
-            <a href="#">Teaser tag</a>
-          </li>
-        </ul>
+        <h2>{title}</h2>
+        <div className="author">{author}</div>
+        <div className={styles.teaserText} />
+        <Button>Read more</Button>
+        <TeaserTags tags={tags} />
       </div>
     </div>
   );

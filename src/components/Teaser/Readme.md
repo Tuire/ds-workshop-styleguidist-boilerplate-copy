@@ -1,5 +1,5 @@
 Typography:
 
 ```jsx
-<Teaser></Teaser>
+<Teaser title={'This is title'} author={'Jori Kuttila'}></Teaser>
 ```

@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:global body {
+	font-family: 'Raleway', sans-serif;
+	color: darkgray;
+}
+
 h1 {
 	font-size: 50px;
 }
 
 :global h2 {
+    font-family: 'Indie Flower', sans-serif;
 	font-size: 29px;
+	color: gray;
+
 }
+
+:global h2:after {
+    content: "";
+    width: 80px!important;
+    height: 1px;
+    border-bottom: 4px solid #ffab19;
+    margin-top: 8px;
+    position: relative;
+    left: 0;
+    display: block;
+ }
+
+ :global .author {
+ 	color: gray;
+ }
+
+ :global a {
+ 	color: #3D578D;
+ 	text-decoration: none;
+ };
